@@ -3,10 +3,11 @@
 import Link from 'next/link';
 import { Calendar, MapPin, Clock, X } from 'lucide-react';
 import { useState } from 'react';
+import { teamConfig } from '../teamConfig';
 
 export default function Schedule() {
   const [events, setEvents] = useState([
-    { type: 'Game', date: 'May 12, 2026', time: '6:00 PM', opponent: 'Sparta', location: 'Field 4', isNext: true },
+    { type: teamConfig.nextEvent.type, date: teamConfig.nextEvent.date, time: teamConfig.nextEvent.time, opponent: teamConfig.nextEvent.opponent, location: teamConfig.nextEvent.location, isNext: true },
     { type: 'Practice', date: 'May 14, 2026', time: '5:30 PM', opponent: 'Infield Focus', location: 'Field 2', isNext: false },
     { type: 'Game', date: 'May 16, 2026', time: '9:00 AM', opponent: 'Lightning', location: 'Field 1', isNext: false },
   ]);

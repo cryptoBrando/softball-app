@@ -1,12 +1,13 @@
 import Link from 'next/link';
 import { Calendar, LayoutList, Trophy, Users } from 'lucide-react';
+import { teamConfig } from './teamConfig';
 
 export default function Home() {
   return (
     <div className="p-6 bg-slate-50 min-h-[calc(100vh-4rem)]">
       <div className="mb-8 text-center">
         <h2 className="text-2xl font-black text-slate-800">Welcome Coach!</h2>
-        <p className="text-slate-500 text-sm mt-1">Next Event: Game vs. Thunder (5/12)</p>
+        <p className="text-slate-500 text-sm mt-1">Next Event: {teamConfig.nextEvent.type} vs. {teamConfig.nextEvent.opponent} ({teamConfig.nextEvent.shortDate})</p>
       </div>
 
       <div className="grid grid-cols-2 gap-4">

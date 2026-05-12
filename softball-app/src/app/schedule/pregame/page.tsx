@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Info, Navigation, Activity, Play, Square, Volume2 } from 'lucide-react';
+import { teamConfig } from '../../teamConfig';
 
 // Sound Synthesizer to create a whistle effect without needing MP3 files
 const playWhistle = () => {
@@ -178,8 +179,8 @@ export default function PregameItinerary() {
     <div className="p-4 bg-slate-50 min-h-screen pb-24">
       <div className="mb-6 flex justify-between items-start">
         <div>
-          <h1 className="text-2xl font-bold text-slate-800">Game vs. Sparta</h1>
-          <p className="text-slate-500 font-medium">May 12 • 6:00 PM First Pitch</p>
+          <h1 className="text-2xl font-bold text-slate-800">{teamConfig.nextEvent.type} vs. {teamConfig.nextEvent.opponent}</h1>
+          <p className="text-slate-500 font-medium">{teamConfig.nextEvent.date} • {teamConfig.nextEvent.time} First Pitch</p>
         </div>
       </div>
 
