@@ -178,7 +178,7 @@ export default function PregameItinerary() {
     <div className="p-4 bg-slate-50 min-h-screen pb-24">
       <div className="mb-6 flex justify-between items-start">
         <div>
-          <h1 className="text-2xl font-bold text-slate-800">vs. Sparta</h1>
+          <h1 className="text-2xl font-bold text-slate-800">Game vs. Sparta</h1>
           <p className="text-slate-500 font-medium">May 12 • 6:00 PM First Pitch</p>
         </div>
       </div>
