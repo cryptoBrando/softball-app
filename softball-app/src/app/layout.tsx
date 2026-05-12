@@ -16,8 +16,8 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-slate-100 min-h-screen">
         <main className="max-w-md mx-auto min-h-screen bg-white shadow-xl relative pb-16">
-            <header className="bg-rose-600 text-white p-4 sticky top-0 z-10 shadow-md">
-                <h1 className="text-xl font-bold tracking-wide">12U SOFTBALL 🥎</h1>
+            <header className="bg-blue-600 text-white p-4 sticky top-0 z-10 shadow-md">
+                <h1 className="text-xl font-bold tracking-wide">TRICO 12U SOFTBALL 🥎</h1>
             </header>
             {children}
             <Navigation />
